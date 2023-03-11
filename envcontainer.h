@@ -6,6 +6,7 @@
 #include"dockerimagebuilder.h"
 #include <QObject>
 #include "EnvFramework/tinyxml/tinyxml.h"
+#include <QPropertyAnimation>
 
 class EnvItem;
 
@@ -72,6 +73,8 @@ protected:
     QPixmap m_image; ///< Image of container.
 
     static QString m_imagePath; ///< Path of image.
+
+    QPropertyAnimation* m_animation; ///< Animation on drawing container.
 
 
 };

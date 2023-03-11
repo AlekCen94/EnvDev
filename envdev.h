@@ -37,7 +37,13 @@ protected:
     ///@brief Method for initialization.
     ///
     void Initialize();
+
+    ///@brief Method for saving env.
+    ///
+    void saveEnv();
+
 private slots:
     void on_actionSearch_containers_triggered();
+    void on_actionSave_env_triggered();
 };
 #endif // ENVDEV_H

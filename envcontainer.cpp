@@ -37,6 +37,9 @@ EnvContainer::EnvContainer(const QString &name)
     m_imageBuilder.appendCommand("apt install firefox");
     //m_imageBuilder.exportFile();
 
+
+
+
 }
 
 ///@brief Constructor with params.
@@ -63,16 +66,15 @@ void EnvContainer::paint(QPainter *painter, const QStyleOptionGraphicsItem *opti
 
         QBrush m_brushBlue(QColor(0,0,250,20));
         QBrush m_brushRed(QColor(250,0,0,20));
-                //painter->setBrush(m_brushBlue);
+
         if(!m_selected)
             painter->fillRect(boundingRect(),m_brushBlue);
-            //painter->setBrush(m_brushRed);
+
         else
             painter->fillRect(boundingRect(),m_brushRed);
-            //painter->setBrush(m_brushBlue);
+
 
         m_image.load(m_imagePath);
-       // m_image.scaled(QSize(boundingRect().width(),boundingRect().height()));
         painter->drawPixmap(boundingRect(),m_image,m_image.rect());
         painter->drawText(QPoint(boundingRect().center().x(),boundingRect().bottomRight().y()+10),m_name);
 
@@ -81,6 +83,7 @@ void EnvContainer::paint(QPainter *painter, const QStyleOptionGraphicsItem *opti
 
 QRectF EnvContainer::boundingRect() const
 {
+
    return m_rect;
 
 }
@@ -89,7 +92,7 @@ QRectF EnvContainer::boundingRect() const
 void EnvContainer::setRect(const QRectF &rect)
 {
     m_rect = rect;
-    update();
+   // update();
 }
 
 ///Mouse press event.

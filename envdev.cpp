@@ -1,12 +1,10 @@
 #include "envdev.h"
-#include "envsearchcontainers.h"
 #include "ui_envdev.h"
 #include "maptable.h"
-#include "envcontainerparametarswig.h""
+#include "envcontainerparametarswig.h"
 #include "envpropertiesterminalwig.h"
 #include "envtoolwg.h"
-#include "dockercommand.h"
-#include "envcontainersearch.h""
+#include "envcontainersearch.h"
 
 EnvDev::EnvDev(QWidget *parent)
     : QMainWindow(parent)
@@ -55,9 +53,22 @@ void EnvDev::Initialize()
 
 }
 
+///@brief Method for saving env.
+///
+void EnvDev::saveEnv()
+{
+
+}
+
 
 void EnvDev::on_actionSearch_containers_triggered()
 {
     m_search->show();
+}
+
+
+void EnvDev::on_actionSave_env_triggered()
+{
+
 }
 

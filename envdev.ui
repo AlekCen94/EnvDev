@@ -29,6 +29,7 @@
     </property>
     <addaction name="actionNew"/>
     <addaction name="actionSearch_containers"/>
+    <addaction name="actionSave_env"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
@@ -77,6 +78,11 @@
   <action name="actionSearch_containers">
    <property name="text">
     <string>Search containers</string>
+   </property>
+  </action>
+  <action name="actionSave_env">
+   <property name="text">
+    <string>Save env</string>
    </property>
   </action>
  </widget>

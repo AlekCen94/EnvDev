@@ -19,6 +19,10 @@ public:
     ///
     void initialize();
 
+private slots:
+    void addPortClicked(); ///< Slot called when addport button clicked.
+    void removePortClicked(); ///< Slot called when removeport button clicked.
+
 private:
     Ui::EnvContainerProp *ui;
 };

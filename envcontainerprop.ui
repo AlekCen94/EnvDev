@@ -27,14 +27,14 @@
        <item row="4" column="0">
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="m_addPortButton">
            <property name="text">
             <string>Add Port</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_2">
+          <widget class="QPushButton" name="m_remotePortButton">
            <property name="text">
             <string>Remove Port</string>
            </property>
@@ -60,47 +60,41 @@
          </item>
         </layout>
        </item>
-       <item row="0" column="0">
-        <widget class="QTableWidget" name="tableWidget"/>
-       </item>
        <item row="3" column="0">
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <item>
-          <widget class="QLabel" name="label">
+          <widget class="QLabel" name="m_portHLabel">
            <property name="text">
             <string>PortH:</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="spinBox"/>
+          <widget class="QSpinBox" name="m_portHSpinbox"/>
          </item>
          <item>
-          <widget class="QLabel" name="label_2">
+          <widget class="QLabel" name="m_portDMLabel">
            <property name="text">
             <string>PortDM:</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="spinBox_2"/>
+          <widget class="QSpinBox" name="m_portDMSpinbox"/>
          </item>
         </layout>
-       </item>
-       <item row="5" column="0">
-        <widget class="QTableWidget" name="tableWidget_2"/>
        </item>
        <item row="7" column="0">
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
-          <widget class="QPushButton" name="pushButton_4">
+          <widget class="QPushButton" name="m_addEnvVarButton">
            <property name="text">
             <string>Add EnvVar</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_3">
+          <widget class="QPushButton" name="m_removeEnvVarButton">
            <property name="text">
             <string>Remove EnvVar</string>
            </property>
@@ -108,20 +102,17 @@
          </item>
         </layout>
        </item>
-       <item row="8" column="0">
-        <widget class="QTableWidget" name="tableWidget_3"/>
-       </item>
        <item row="6" column="0">
         <layout class="QHBoxLayout" name="horizontalLayout_5">
          <item>
-          <widget class="QLabel" name="label_3">
+          <widget class="QLabel" name="m_envVarHLabel">
            <property name="text">
             <string>EnvVarH:</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit"/>
+          <widget class="QLineEdit" name="m_envVarHLineEdit"/>
          </item>
          <item>
           <widget class="QPushButton" name="pushButton_7">
@@ -131,16 +122,25 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_4">
+          <widget class="QLabel" name="m_envVarDMLabel">
            <property name="text">
             <string>EnvVarDM:</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_2"/>
+          <widget class="QLineEdit" name="m_envVarDMLineEdit"/>
          </item>
         </layout>
+       </item>
+       <item row="0" column="0">
+        <widget class="QListWidget" name="m_portListWidget"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QListWidget" name="m_envVarListWidget"/>
+       </item>
+       <item row="8" column="0">
+        <widget class="QListWidget" name="listWidget_3"/>
        </item>
       </layout>
      </widget>

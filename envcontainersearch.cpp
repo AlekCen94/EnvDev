@@ -3,6 +3,7 @@
 #include "envsearchitem.h"
 #include "QGraphicsScene"
 #include <QDebug>
+#include <QVBoxLayout>
 
 EnvContainerSearch::EnvContainerSearch(QWidget *parent) :
     QDialog(parent),
@@ -21,10 +22,13 @@ EnvContainerSearch::~EnvContainerSearch()
 ///
 void EnvContainerSearch::Initialize()
 {
+    QVBoxLayout layout;
     setWindowTitle("EnvContainerSearch");
     connect(ui->m_searchButton,SIGNAL(clicked(bool)),this,SLOT(search()));
     connect(ui->m_addItemButton,SIGNAL(clicked(bool)),this,SLOT(add()));
+    ui->m_itemsView->setLayout(&layout);
     ui->m_itemsView->setScene(new QGraphicsScene(this));
+
 }
 
 void EnvContainerSearch::search()
